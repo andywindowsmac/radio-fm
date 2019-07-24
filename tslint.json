@@ -1,0 +1,76 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended",
+    "tslint:latest",
+    "tslint-config-airbnb",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "jsRules": {},
+  "rules": {
+    "prettier": [true, { "semi": false, "trailingComma": "all","singleQuote": true }],
+		"origin-ordered-imports": [ true, "one-blank-line" ],
+    "no-submodule-imports": false,
+    "no-constant-condition": true,
+    "import-name": false,
+    "object-literal-sort-keys": false,
+    "arrow-parens": false,
+    "no-console": [false],
+    "no-unused-expression": true,
+    "comment-format": false,
+    "no-shadowed-variable": false,
+    "no-empty-interface": false,
+    "member-access": false,
+    "no-var-requires": false,
+    "align": false,
+    "ban": false,
+    "class-name": true,
+    "curly": true,
+    "eofline": true,
+    "forin": true,
+    "indent": [true, "spaces", 2],
+    "interface-name": [true, "always-prefix"],
+    "jsdoc-format": true,
+    "jsx-no-lambda": false,
+    "jsx-no-multiline-js": false,
+    "react/jsx-boolean-value": true,
+    "label-position": true,
+    "max-line-length": [true, 120],
+    "member-ordering": false,
+    "no-any": false,
+    "no-arg": true,
+    "no-switch-case-fall-through": true,
+    "switch-default": true,
+    "triple-equals": [true, "allow-null-check"],
+    "typedef": [true, "parameter", "property-declaration"],
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      }
+    ],
+    "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case", "allow-snake-case"],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-module",
+      "check-operator",
+      "check-separator",
+      "check-type",
+      "check-typecast"
+    ]
+  },
+  "rulesDirectory": [
+		"tslint-plugin-prettier",
+    "node_modules/tslint-origin-ordered-imports-rule/dist"
+	],
+  "exclude": [
+    "node_modules"
+  ]
+}

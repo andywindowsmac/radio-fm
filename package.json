@@ -2,20 +2,35 @@
   "name": "with-typescript",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
+    "dev": "next app",
+    "build": "next build app",
+    "start": "next start app",
     "type-check": "tsc"
   },
   "dependencies": {
+    "module-resolver": "^1.0.0",
     "next": "latest",
+    "prettier": "^1.18.2",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
+    "@types/next": "^8.0.6",
     "@types/node": "^11.13.9",
     "@types/react": "^16.8.15",
     "@types/react-dom": "^16.0.11",
+    "@types/styled-components": "^4.1.18",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-plugin-styled-components": "^1.10.6",
+    "tslint": "^5.18.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-consistent-codestyle": "^1.15.1",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-origin-ordered-imports-rule": "^1.2.2",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^4.0.0",
     "typescript": "3.5.2"
   },
   "license": "ISC"
