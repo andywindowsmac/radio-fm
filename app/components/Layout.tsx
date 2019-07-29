@@ -1,42 +1,42 @@
-import * as React from 'react'
-import Link from 'next/link'
 import Head from 'next/head'
+import * as React from 'react'
+import styled from 'themes'
 
-type Props = {
+import { Header } from 'components'
+import FooterContainer from 'containers/FooterContainer'
+
+interface IProps {
   title?: string
 }
 
-const Layout: React.FunctionComponent<Props> = ({
+const StyledContent = styled.div`
+  width: 80%;
+  height: calc(100vh - 20px);
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 5%;
+  overflow: hidden;
+  background-color: ${({ theme: { colors } }) => colors.primary};
+  position: relative;
+  padding-bottom: 150px;
+`
+
+const Layout: React.FunctionComponent<IProps> = ({
   children,
-  title = 'This is the default title',
+  title = 'No title',
 }) => (
-  <div>
+  <>
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <header>
-      <nav>
-        <Link href="/">
-          <a>Home</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/about">
-          <a>About</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/initial-props">
-          <a>With Initial Props</a>
-        </Link>
-      </nav>
-    </header>
-    {children}
-    <footer>
-      <hr />
-      <span>I'm here to stay (Footer)</span>
-    </footer>
-  </div>
+    <StyledContent>
+      <Header title={title} />
+      {children}
+      <FooterContainer />
+    </StyledContent>
+  </>
 )
 
 export default Layout
