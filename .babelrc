@@ -7,10 +7,15 @@
     ["module-resolver", { 
         "root": ["."],
         "alias": {
-          "components": "./app/components/",
-          "interfaces": "./app/interfaces/",
-          "static": "./app/static/",
-          "utils": "./app/utils/"
+          "components": "./app/components",
+          "interfaces": "./app/interfaces",
+          "static": "./app/static",
+          "utils": "./app/utils",
+          "containers": "./app/containers",
+          "ducks": "./app/ducks",
+          "hocs": "./app/hocs",
+          "themes": "./app/themes",
+          "lib": "./app/lib",
         } 
       }
     ]

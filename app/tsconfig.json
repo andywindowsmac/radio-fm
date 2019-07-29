@@ -16,7 +16,37 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@components": [
+        "app/components"
+      ],
+      "@interfaces": [
+        "app/interfaces"
+      ],
+      "@static": [
+        "app/static"
+      ],
+      "@utils": [
+        "app/utils"
+      ],
+      "@containers": [
+        "app/containers"
+      ],
+      "@ducks": [
+        "app/ducks"
+      ],
+      "@hocs": [
+        "app/hocs"
+      ],
+      "@themes": [
+        "app/themes"
+      ],
+      "@lib": [
+        "app/lib"
+      ]
+    }
   },
   "exclude": [
     "node_modules"
